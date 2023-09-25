@@ -1,0 +1,11 @@
+style.css
+h3{
+    color: red;
+    font-size: 1.5em;
+}
+h1 {
+    color: #375e97;
+    font-size: 2em;
+    font-family: Georgia, 'Futura Bold', Times, serif;
+    border-bottom: 1px solid #375e97;
+}
