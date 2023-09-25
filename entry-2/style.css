@@ -36,7 +36,7 @@ a { color: navy; }
 
 .tech-slideshow {
     height: 200px;
-    max-width: 800px;
+    max-width: 1920px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -45,7 +45,7 @@ a { color: navy; }
   
   .tech-slideshow > div {
     height: 200px;
-    width: 2526px;
+    width: 3676px;
     background: url(posters4.png);
     position: absolute;
     top: 0;
