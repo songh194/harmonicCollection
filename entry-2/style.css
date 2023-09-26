@@ -17,6 +17,7 @@ body {
     font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* button */
 .btn-3d {
     font-family:'DotGothic16', sans-serif;
     font-weight:500;
@@ -36,6 +37,7 @@ body {
 
 a { color: navy; }
 
+/* auto-slider */
 .tech-slideshow {
     height: 200px;
     max-width: 1920px;
