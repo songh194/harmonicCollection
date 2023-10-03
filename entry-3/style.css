@@ -1,0 +1,92 @@
+style.css
+
+
+h3{
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 0;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+h5{
+  text-align: center;
+}
+
+body {
+    font-size: 20px;
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* button */
+.btn-3d {
+    font-family:'DotGothic16', sans-serif;
+    font-weight:500;
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    padding: 20px 60px;
+    color: white;
+    margin: 20px 10px 10px;
+    border-radius: 6px;
+    text-align: center;
+    transition: top .01s linear;
+    background-color: #80C49D;
+    margin-left: 50em;
+    
+}
+
+.btn-3d.green:hover  {background-color: #20B2AA;}
+
+a {
+  color: rgb(40, 40, 40); 
+  font-style: normal;
+  text-align: center;
+}
+
+a:hover{
+  color: green;
+  font-style: italic;
+}
+
+
+/* auto-slider */
+.tech-slideshow {
+    height: 200px;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+  
+.tech-slideshow > div {
+    height: 200px;
+    width: 3676px;
+    background: url(posters4.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+}
+
+
+.tech-slideshow:hover .mover-2 {
+    opacity: 1;
+}
+  
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+};
+    
+
