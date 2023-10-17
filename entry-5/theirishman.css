@@ -1,0 +1,37 @@
+img {
+    width: 350px;
+    text-align: right;
+}
+.poster {
+    width: 30%;
+    height:150px;
+    float: left;
+    margin-left: 3em;
+    margin-top: 3em;
+    
+}
+.right {
+    width: 70%;
+    height:150px;
+    float: right;
+    margin-top: -13.5em;
+}
+h1{
+    color: #E60427;
+    font-family: Abril Fatface;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.3%; /* 113.456px */
+
+}
+h2 {
+    font-family: 'Abyssinica SIL', serif;
+    line-height: 1;
+    color: white;
+    font-weight: 100;
+}
+
+body {
+    background-color: black;
+}

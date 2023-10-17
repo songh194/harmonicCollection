@@ -1,0 +1,77 @@
+body{
+background-color: black;
+}
+h1 {
+    text-align: right;
+    color: #FFF;
+    font-family: 'DotGothic16', sans-serif;
+    margin-bottom: -1em;
+    position: static;
+}
+h1:hover {
+    color:aqua;
+}
+
+h2 {
+    color: slategray;
+    font-family: Diplomata;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 100;
+    margin-bottom: -1.2em;
+}
+h2:hover {
+    color: #E60427;
+}
+h3 {
+    top: 0;
+    color: slategray;
+    text-align: right;
+    font-family: 'BioRhyme Expanded';
+    font-size: 80px;
+    font-style: normal;
+    margin-bottom: -6.5em;
+}
+h3:hover {
+    color: #D70072;
+}
+h4 {
+    color: white;
+    font-family: 'Abril Fatface';
+    font-size: 300px;
+    text-align: center;
+    font-weight: 200;
+
+}
+h5 {
+    color: slategray;
+    font-family: 'Long Cang';
+    font-size: 90px;
+    font-style: normal;
+    margin-top: -5.3em;
+    margin-bottom: -4.1em;
+}
+h5:hover {
+    color:orangered;
+}
+h6 {
+    text-align: right;
+    color: slategray;
+    font-family: Asset;
+    font-size: 150px;
+    font-style: normal;
+    margin-bottom: -.6em;
+
+}
+h6:hover{
+    color:lightseagreen
+}
+p {
+    color: slategray;
+    font-family: 'Song Myung';
+    font-size: 60px;
+    font-style: normal;
+}
+p:hover{
+    color:rebeccapurple
+}

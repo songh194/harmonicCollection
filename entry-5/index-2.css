@@ -105,3 +105,16 @@ a:hover{
 .btn-3d:active {
     top: 9px;
   }
+
+p {
+    text-align: right;
+    color: black;
+    font-family: 'DotGothic16', sans-serif;
+    margin-bottom: -2em;
+    position: static;
+}
+
+p:hover {
+    color:aqua;
+}
+
