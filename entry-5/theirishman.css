@@ -6,15 +6,20 @@ img {
     width: 30%;
     height:150px;
     float: left;
-    margin-left: 3em;
+    margin-left: 6em;
     margin-top: 3em;
     
 }
+/* figure and figcaption ??? */
+
+
+
 .right {
     width: 70%;
     height:150px;
     float: right;
     margin-top: -13.5em;
+    margin-right: -4em;
 }
 h1{
     color: #E60427;
@@ -35,6 +40,7 @@ h2 {
 
 body {
     background-color: black;
+    padding: 50px
 }
 
 h3{
@@ -46,7 +52,7 @@ h3{
 }
 
 h5 {
-    font-family: 'Abyssinica SIL', serif;
+    font-family: 'DotGothic16', sans-serif;
     line-height: 1.2;
     color: rgb(214, 214, 214);
     font-weight: 10;
@@ -90,7 +96,8 @@ span{
 
 }
 
-@media (max-width:375px){
+/* phone breakpoint */
+/* @media (min-width:375px){
     .poster{
         margin:auto;
     }
@@ -100,4 +107,24 @@ span{
     body {
         background-color: aqua;
     }
+} */
+
+body {
+    font-style: unset;
 }
+
+/* go back */
+h6 {
+    text-align: right;
+    color: #FFF;
+    font-family: 'DotGothic16', sans-serif;
+    margin-bottom: -1em;
+    position: static;
+    font-size: 20px;
+}
+h6:hover {
+    color:aqua;
+}
+
+
+/* crime text animation? */

@@ -12,16 +12,18 @@ h5{
     text-align: center;
   }
 
-a {
+a,p {
   color: rgb(40, 40, 40); 
   font-style: normal;
   text-align: center;
-  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 15px;
 }
 
 a:hover{
   color: green;
   font-style: italic;
+  
 }
 
 .btn-center{
@@ -112,6 +114,7 @@ p {
     font-family: 'DotGothic16', sans-serif;
     margin-bottom: -2em;
     position: static;
+    font-size: 20px;
 }
 
 p:hover {
