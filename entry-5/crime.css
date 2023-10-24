@@ -1,6 +1,7 @@
 body{
 background-color: black;
 }
+/* go back */
 h1 {
     text-align: right;
     color: #FFF;
@@ -11,7 +12,7 @@ h1 {
 h1:hover {
     color:aqua;
 }
-
+/* the irishman */
 h2 {
     color: slategray;
     font-family: Diplomata;
@@ -23,6 +24,7 @@ h2 {
 h2:hover {
     color: #E60427;
 }
+/* in bruges */
 h3 {
     top: 0;
     color: slategray;
@@ -35,6 +37,7 @@ h3 {
 h3:hover {
     color: #D70072;
 }
+/* crime */
 h4 {
     color: white;
     font-family: 'Abril Fatface';
@@ -43,6 +46,7 @@ h4 {
     font-weight: 200;
 
 }
+/* a better tomorrow */
 h5 {
     color: slategray;
     font-family: 'Long Cang';
@@ -54,6 +58,7 @@ h5 {
 h5:hover {
     color:orangered;
 }
+/* brick */
 h6 {
     text-align: right;
     color: slategray;
@@ -66,6 +71,7 @@ h6 {
 h6:hover{
     color:lightseagreen
 }
+/* Sympathy for Mr. Vengance */
 p {
     color: slategray;
     font-family: 'Song Myung';
@@ -74,4 +80,39 @@ p {
 }
 p:hover{
     color:rebeccapurple
+}
+
+/* phone */
+@media screen and (max-width: 650px){
+    h2{
+        font-size: 60px;
+        margin-bottom: -.7em;
+    }
+    h3{
+        font-size: 60px;
+        margin-bottom: -.7em;
+    }
+    h4{
+        margin-top: -.1em;
+        font-size: 200px;
+        margin-bottom: 0em;
+    }
+    h5{
+        font-size: 60px;
+        margin-top: auto;
+        margin-bottom: -2em;
+    }
+    h6{
+        font-size: 60px;
+        margin-bottom: 0em;
+    }
+    p {
+        font-size: 54px;
+    }
+    h2,h5,p{
+        text-align: left;
+    }
+    h1,h3,h6{
+        text-align: right;
+    }
 }

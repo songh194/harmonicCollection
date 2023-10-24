@@ -1,0 +1,92 @@
+body{
+    background: #F1637D;
+    }
+
+/* go back */
+h1 {
+    text-align: right;
+    font-family: 'DotGothic16', sans-serif;
+    margin-bottom: -2em;
+    position: static;
+}
+h1:hover, h1:active {
+    color:aqua;
+}
+
+/* phantom thread */
+h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 100;
+    margin-bottom: -1em;
+    text-align: right;
+}
+h2:hover, h2:active {
+    color: #3e027a;
+}
+/* 500 days of summer */
+h3 {
+    top: 0;
+    text-align: left;
+    font-family:'Courier prime', monospace;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: -1.4em;
+}
+h3:hover, h3:active {
+    color: #ffd943;
+}
+/* happy together */
+h4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size: 75px;
+    text-align: right;
+    font-weight: 200;
+}
+h4:hover, h4:active{
+    color:#2BB8A7;
+}
+/* romance */
+h5 {
+    font-family: 'Pinyon Script';
+    font-size: 350px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 100;
+    margin-top: -.7em;
+    margin-bottom: 0;
+}
+
+/* comrades */
+h6 {
+    font-family: 'Noto Serif Simplified Chinese', sans-serif;
+    font-family: tt-zhihei-chs-variable, sans-serif;
+    text-align: right;
+    font-size: 64px;
+    font-weight:200px;
+    text-align: left;
+    margin-top: -1.8em;
+    margin-bottom: -.9em;
+}
+h6:hover, h6:active{
+    color:#c60e0e;
+}
+/* decision to leave */
+p {
+    font-family: 'Diphylleia';
+    font-size: 64px;
+    font-style: normal;
+    text-align: right;
+}
+p:hover, p:active{
+    color:#1369af;
+}
+
+h2,h3,h4,h6,p{
+    color:FFBBBB;
+}
+h1,h5{
+    color:white;
+}

@@ -121,3 +121,25 @@ p:hover {
     color:aqua;
 }
 
+/* phone */
+@media screen and (max-width:650px){
+    p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    h1{
+        text-align: center;
+        margin:unset;
+        font-size: 60px;
+        line-height:.9em;
+        margin-bottom: .5em;
+    }
+    .btn-3d.pink, .btn-3d.green, .btn-3d.yellow, .btn-3d.purple, .btn-3d.blue, .btn-3d.orange {
+        font-size: 16px;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        padding: 10px 30px;
+        margin: 20px 10px 10px;
+    }
+}
