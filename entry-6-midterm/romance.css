@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(208, 86, 86);
+    color: #FFF;
+    }
+    /* go back */
+    .goback {
+        text-align: right;
+        color: #FFF;
+        font-family: 'DotGothic16', sans-serif;
+        position: static;
+        font-size: 15px;
+    }
+    .goback:hover {
+        color:aqua;
+    }
+    
+    .crime {
+        text-align: left;
+        color:#FFF;
+        font-family: 'DotGothic16', sans-serif;
+        margin-top: -2.5em;                   
+        /* position: static; */
+        font-size: 15px;
+    }
+    
+    label {
+        color:#FFF;
+        font-size: 28px;
+        line-height: 2em;
+        font-family: 'DotGothic16', sans-serif;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    img {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .title {
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: -.2em;
+        font-family: 'Azeret Mono';
+    }
+    .director {
+        font-family: 'Azeret Mono';
+        margin-top: -2.2em;
+        margin-bottom: 2em;
+    }
+    
+    
+    /* accordion */
+    
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+      .accordion {
+        margin: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+    
+      .accordion-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        background: rgb(208, 86, 86);
+        color: #fff;
+      }
+      .accordion-content {
+        max-height: 0;
+        padding: 1 1em;
+        background: white;
+        transition: all 0.35s;
+        color: black;
+        opacity: 0;
+        background-size:cover;
+      }
+    
+      input:checked ~ .accordion-content {
+        max-height: 100vh;
+        padding: 2em;
+        opacity: 100;
+
+      }
+     
+    
+    
