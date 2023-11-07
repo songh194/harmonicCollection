@@ -1,0 +1,15 @@
+.light {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+}
+
+.p1,.p2,.p3,.p4 {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    margin-left: 8.5em;
+}
+
+
+/* popup */
