@@ -19,6 +19,7 @@ h3 {
 
 h3:hover {
     color:rgb(37, 138, 105);
+    text-decoration: underline;
 }
 h1,h2,h3 {
     text-align: center;
