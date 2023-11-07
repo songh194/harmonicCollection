@@ -1,6 +1,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="livingroom.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
         <style> 
             @font-face {
               font-family: myFirstFont;
@@ -21,16 +24,31 @@
         </style>
     </head>
     <body>
+        <button class="left" onclick="location.href='index.html'">&#60;</button>
+        <button class="right" onclick="location.href='kitchen.html'">&#62;</button>
         <!-- switch pages -->
-        <!-- put graphic -->
-        <img src="" onclick="location.href='kitchen.html'">
+        <!-- put graphics -->
         <img src="light_liviingroom.png" alt="" class="light" style="background:transparent;">
         <img src="P1_liviingroom.png" alt="" class="p1" style="background:transparent;" >
         <img src="p2_liviingroom.png" alt="" class="p2" style="background:transparent;">
         <img src="p3_liviingroom.png" alt="" class="p3" style="background:transparent;">
         <img src="p4_liviingroom.png" alt="" class="p4" style="background:transparent;">
 
+        <button class="popup-button" id="openPopup">Open Popup</button>
 
-  
+        <div class="popup" id="myPopup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <div class="poster"><img src="living-p1.jpg" alt="poster of movie happy together" class="pp1"></div>
+                <div class="caption">
+                    <h2>Happy Together (1997)</h2>
+                    <p>Dir. Wong Kar-Wai <br> Maybe the best romance film?</p>
+                </div>
+            </div>
+        </div>
 
+
+
+    </body>
+            
 </html>
