@@ -129,3 +129,22 @@ button {
     cursor: pointer;
 }
 /* popup */
+
+@media screen and (max-width: 640px) {
+    body {
+        background-size: contain;
+    }
+    .p1,.p2,.p3,.p4,.pp1 {
+        position: absolute;
+        z-index: 1;
+        height: 50%;
+        margin-left: 0;
+        margin-top: 12em;
+    }
+    .pp1 {
+        margin-left: 0;
+    }
+    .right {
+        margin-left: 0em;
+    }
+}
