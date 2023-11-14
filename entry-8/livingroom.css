@@ -1,150 +1,118 @@
-.light {
-    position: absolute;
-    z-index: 2;
-    height: 100%;
+
+.p1,
+.p2,
+.p3,
+.p4 {
+  position: absolute;
+  height: 10%;
+  margin-left: 8.5em;
 }
 
-.p1,.p2,.p3,.p4 {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    margin-left: 8.5em;
+.right {
+  margin-left: 9.2em;
 }
 
-/* p1 content ratio */
-.poster {
-    width: 30%;
-    float: left;
-    
-}
-.pp1 {
-    width: 200px;
-}
-.caption {
-    width: 60%;
-    height:150px;
-    float: right;
-    font-family: 'DotGothic16';
-    text-align: left;
-    font-size: 30px;
-
-}
-p{
-    margin-top: -1em;
+.left {
+  margin-left: .2em;
 }
 
-/* p1 button */
-button {
-    text-align: right;
-    position:absolute;
-    z-index: 5;
-    background-color: blue;
-    opacity:50%;
-    width: 310px;
-    height: 390px;
-    margin-left: 59em;
-    margin-top: 6em;
+.left,
+.right {
+  color: white;
+  font-family: 'DotGothic16', sans-serif;
+  position: fixed;
+  z-index: 3;
+  font-size: 150px;
+  opacity: 70%;
+  margin-top: 2em;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: inherit;
 }
 
-/* p1 POP UP */
-.popup-button {
-    cursor: pointer;
-    padding: 10px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    opacity: 0;
-}
-.popup-button:hover {
-    cursor:pointer;
-    opacity: 20%;
-    color:transparent;
+.left:hover,
+.right:hover {
+  color: rgb(0, 242, 161);
+  opacity: 90%;
+  cursor: pointer;
 }
 
+/* popup with java */
 .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10; /* Increased z-index for popups */
 }
 
 .popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    opacity: 80%;
-    padding: 50px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    max-width: 80%;
-
+  z-index: 11; /* Increased z-index for popup content */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  text-align: center;
+  font-family: 'DotGothic16';
 }
 
+/* Style close buttons for each popup */
 .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 12; /* Increased z-index for close buttons */
 }
 
-.popup-button:focus + .popup {
-    display: block;
+/* Image style */
+.p1 img,
+.p2 img,
+.p3 img,
+.p4 img {
+  cursor: pointer;
+  position: absolute;
+  height: auto;
 }
 
-
-
-
-
-.right {
-    margin-left: 7.6em;
+.p1 img {
+  width: 300px; 
+  margin-left: 55em;
+  margin-top: 8em;
 }
-.left {
-    margin-left: -1.3em;
+
+.p2 img {
+  width: 200px;
+  margin-left: 35em;
+  margin-top: 13em;
 }
-.left,.right {
-    color: white;
-    font-family: 'DotGothic16', sans-serif;
-    position: fixed;
-    z-index: 3;
-    font-size: 150px;
-    opacity: 70%;
-    margin-top: 1.5em;
-    background: none;
-	border: none;
-	padding: 0;
-	outline: inherit;
+
+.p3 img {
+    width: 150px;
+    margin-left: 19em;
+    margin-top: 28em;
+}
+
+.p4 img {
+    width: 150px;
+    margin-left:13em;
+    margin-top: 14em;
 
 }
-.left:hover,.right:hover {
-    color:rgb(0, 242, 161);
-    opacity: 90%;
-    cursor: pointer;
-}
-/* popup */
 
-@media screen and (max-width: 640px) {
-    body {
-        background-size: contain;
-    }
-    .p1,.p2,.p3,.p4,.pp1 {
-        position: absolute;
-        z-index: 1;
-        height: 50%;
-        margin-left: 0;
-        margin-top: 12em;
-    }
-    .pp1 {
-        margin-left: 0;
-    }
-    .right {
-        margin-left: 0em;
-    }
+.p1 button, .p2 button, .p3 button, .p4 button {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background: none;
 }

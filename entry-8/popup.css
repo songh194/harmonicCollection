@@ -1,17 +1,5 @@
 /* styles.css */
-img {
-    height: 100%;
-}
-.popup-toggle {
-    display: none;
-}
-
-.button {
-    cursor: pointer;
-    height: 5%;
-}
-
-.popup-overlay {
+.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -22,9 +10,8 @@ img {
     z-index: 1;
 }
 
-.popup {
-    display: none;
-    position: fixed;
+.popup-content {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -34,19 +21,12 @@ img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     max-width: 80%;
     text-align: center;
-    z-index: 2;
 }
 
-.close-button {
+.close {
     position: absolute;
     top: 0;
     right: 0;
     padding: 10px;
     cursor: pointer;
-}
-
-/* Show the popup when the checkbox is checked */
-.popup-toggle:checked + .popup-overlay,
-.popup-toggle:checked + .popup-overlay + .popup {
-    display: block;
 }

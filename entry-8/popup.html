@@ -4,17 +4,16 @@
     <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 <body>
-    <input type="checkbox" id="popup-toggle" class="popup-toggle">
-    <label for="popup-toggle" class="button">
-        <img src="P1_liviingroom.png">
-    </label>
-    
-    <div class="popup">
-        <label for="popup-toggle" class="popup-overlay"></label>
+    <div class="popup" id="myPopup">
         <div class="popup-content">
-            <label for="popup-toggle" class="close-button">&#10006;</label>
+            <span class="close" id="closePopup">&times;</span>
             <h2>Popup Content</h2>
+            <p>This is your popup content.</p>
         </div>
     </div>
+
+    <button id="openPopup" onclick="openPopup()"><img src="p1.png" alt="Button Image"></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
