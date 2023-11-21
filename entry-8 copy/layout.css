@@ -1,0 +1,81 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+    width: 800px;
+    height:500px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    }
+    
+    .div1,.div2,.div3,.div4 {
+        border: 2px solid black;
+        padding: 10px;
+        cursor: pointer;
+    }
+    /* living room */
+    .div1 { 
+        background-color:sandybrown;
+        grid-area: 4 / 4 / 7 / 9;
+    }
+    /* bedroom */
+    .div2 { 
+        grid-area: 1 / 4 / 4 / 8;
+        background-color:rgb(255, 234, 185);
+    }
+    /* bathroom */
+    .div3 { 
+        background-color: cornflowerblue;
+        grid-area: 1 / 8 / 3 / 9; 
+    }
+    /* diningroom */
+    .div4 { 
+        background-color: rgb(152, 198, 165);
+        grid-area: 1 / 1 / 7 / 4; 
+    }
+    
+    .div1:hover{
+        background-color:rgb(199, 129, 67);
+    }
+    .div2:hover{
+        background-color:rgb(189, 177, 120);
+    }
+    .div3:hover{
+        background-color:rgb(65, 108, 186);
+    }
+    .div4:hover{
+        background-color:rgb(98, 145, 111);
+    }
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        margin: 0; 
+        font-family: 'dotgothic16';
+      }
+      
+h1 {
+    z-index: 3;
+    position: fixed;
+    top: 1em;
+    right: 2em;
+    border: 2px solid black;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 7px;
+    background-color: white;
+    }
+h1:hover {
+    cursor:pointer;
+    color:rgb(37, 138, 105);
+    border: 2px solid rgb(37, 138, 105);
+}

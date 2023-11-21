@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="livingroom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <style> 
+        @font-face {
+          font-family: myFirstFont;
+          src: url(FsJenson1Regular-Ya6y.ttf);
+        }
+        
+        div {
+          font-family: myFirstFont;
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('livingroomBG.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100vh;
+        }
+    </style>
+  </head>
+  <body>
+    <title>Living room</title>
+    <!-- <h1>Living room</h1> -->
+    <button class="light" id="toggleButton"><img src="shortlight.png" alt=""></button>
+
+    <h1 onclick="location.href='layout.html'">&#60;</h1>
+
+    <img src="" alt="">
+    <div class="container">
+      <div class="p1">
+          <div class="popup" id="myPopup1">
+            <div class="popup-content">
+              <span class="close" id="closePopup1">&times;</span>
+              <h2><i>Happy Together</i> (1997)</h2>
+              <p>Dir. Wong Kar-Wai <br><br>Phemomenal. Watched it 4+times...</p>
+            </div>
+          </div>
+          <button id="openPopup1" onclick="openPopup1()"><img class="p1 img" src="living-p1.png" alt="Button Image"></button>
+      </div>
+        
+      <div class="p2">
+          <div class="popup" id="myPopup2">
+            <div class="popup-content">
+              <span class="close" id="closePopup2">&times;</span>
+              <h2><i>Trainspotting</i> (1996)</h2>
+              <p>Dir. Danny Boyle <br><br> A very nasty movie but great soundtrack.</p>
+            </div>
+          </div>
+          <button id="openPopup2" onclick="openPopup2()"><img class="p2 img" src="living-p2.png" alt="Button Image"></button>
+      </div>
+
+      <div class="p3">
+          <div class="popup" id="myPopup3">
+            <div class="popup-content">
+              <span class="close" id="closePopup3">&times;</span>
+              <h2><a href="https://open.spotify.com/album/78MM8HrabEGPLVWaJkM2t1?si=Fg8-HrTLRnWTKlgMSxr3Ow"><i>Speaking in Tongues</i> (1983)</a></h2>
+              <p>Album by the Talking Heads<br><br>Funky and classic!</p>
+            </div>
+          </div>
+          <button id="openPopup3" onclick="openPopup3()"><img class="p3 img" src="living-p3.png" alt="Button Image"></button>
+      </div>
+
+      <div class="p4">
+          <div class="popup" id="myPopup4">
+            <div class="popup-content">
+              <span class="close" id="closePopup4">&times;</span>
+              <h2><a href="https://open.spotify.com/album/3ly9T2L4pqTZijFgQssd3x?si=8V8ktvZvTSyLp_hxeFnkfg"><i>Different Class</i> (1995)</a></h2>
+              <p>Album by Pulp<br><br> It has great and weird songs that are<br>very much in the spirit of the title. </p>
+            </div>
+          </div>
+          <button id="openPopup4" onclick="openPopup4()"><img class="p4 img" src="living-p4.png" alt="Button Image"></button>
+      </div>
+    </div>
+
+    <!-- link to javascript -->
+    <script src="script.js"></script>
+    <script src="light.js"></script>
+  </body>
+</html>
