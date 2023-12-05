@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="diningroom.css">
+        <style> 
+            @font-face {
+              font-family: myFirstFont;
+              src: url(FsJenson1Regular-Ya6y.ttf);
+            }
+            
+            div {
+              font-family: myFirstFont;
+            }
+        </style>
+        <style>
+            body {
+                background-image: url('HC_diningroom.jpg');
+                background-repeat: no-repeat;
+                background-attachment: relative;
+                background-position: center;
+                background-size:100% 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <title>Dining room</title>
+        <button class="left" onclick="location.href='livingroom.html'">&#60;</button>
+        <button class="right" onclick="location.href='bedroom.html'">&#62;</button>
+
+        <img id="playButton" class='playbutton' src="speaker.png" alt="pixel art, light green speaker on the table">
+        <audio id="music" src="DistantBanjo.mp3"></audio>
+        
+        <div class="container">
+          <div class="p1">
+              <div class="popup" id="myPopup1">
+                <div class="popup-content">
+                  <span class="close" id="closePopup1">&times;</span>
+                  <img src="diningp1OG.jpg" alt="The actual poster of the movie">
+                  <h2><i>Decision to Leave</i>(2023)</h2>
+                  <p>Dir. Park Chan-Wook <br><br>Possibly the best romance movie ever? (it is about murder...)</p>
+                </div>
+              </div>
+              <button id="openPopup1" onclick="openPopup1()"><img class="p1 img" src="dining-p1.png" alt="pixel art poster of the movie"></button>
+          </div>
+            
+          <div class="p2">
+              <div class="popup" id="myPopup2">
+                <div class="popup-content">
+                  <span class="close" id="closePopup2">&times;</span>
+                  <img src="diningp2OG.jpg" alt="The actual poster of the movie">
+                  <h2><i>Portrait of a Lady on Fire</i> (2019)</h2>
+                  <p>Dir.Céline Sciamma <br><br>SO SO SO beautiful. And gay.</p>
+                </div>
+              </div>
+              <button id="openPopup2" onclick="openPopup2()"><img class="p2 img" src="dining-p2.png" alt="pixrl art poster of the movie"></button>
+          </div>
+      
+          <div class="p3">
+              <div class="popup" id="myPopup3">
+                <div class="popup-content">
+                  <span class="close" id="closePopup3">&times;</span>
+                  <img src="diningp3OG.jpg" alt="The actual poster of the movie">
+                  <h2><i>Aftersun</i> (2022)</h2>
+                  <p>Dir. Charlotte Wells<br><br>It <i>will</i> seep through the cracks of your heart.</p>
+                </div>
+              </div>
+              <button id="openPopup3" onclick="openPopup3()"><img class="p3 img" src="dining-p3.png" alt="pixel art poster of the movie"></button>
+          </div>
+      
+          <div class="p4">
+              <div class="popup" id="myPopup4">
+                <div class="popup-content">
+                  <span class="close" id="closePopup4">&times;</span>
+                  <img src="diningp4OG.gif" alt="The actual scene as a gif">
+                  <h2><i>Fallen angels</i> (1995)</h2>
+                  <p>Dir. Wong Kar-Wai<br><br>A bit corny but beautiful.</p>
+                </div>
+              </div>
+              <button id="openPopup4" onclick="openPopup4()"><img class="p4 img" src="dining-p4.png" alt="pixel art of a scene from the movie where there is a motercycle going"></button>
+          </div>
+
+          <div class="p5">
+              <div class="popup" id="myPopup5">
+                <div class="popup-content">
+                  <span class="close" id="closePopup5">&times;</span>
+                  <img src="diningp5OG.jpg" alt="The actual poster of the movie">
+                  <h2><i>Eternal Sunshine of the Spotless Mind</i> (2004)</h2>
+                  <p>Dir. Michel Gondry<br><br>It is likely that it <i>will</i> destroy you <br> if you watch it after a breakup.</p>
+                </div>
+              </div>
+              <button id="openPopup5" onclick="openPopup5()"><img class="p5 img" src="dining-p5.png" alt="pixel art poster of the movie"></button>
+          </div>
+
+          <div class="p6">
+              <div class="popup" id="myPopup6">
+                <div class="popup-content">
+                  <span class="close" id="closePopup6">&times;</span>
+                  <img src="diningp6OG.jpg" alt="The actual poster of the movie">
+                  <h2><a href="https://open.spotify.com/album/79MzdMnfRG7jsDEYbbl9Pz?si=cJzaW_FzTcCij2HgMzWQ_Q"><i>Legacy</i> (2020)</a></h2>
+                  <p>A compilation album by the members of the Highlight record<br><br>Korean Hip-hop is a thing and I love it.</p>
+                </div>
+              </div>
+              <button id="openPopup6" onclick="openPopup6()"><img class="p6 img" src="dining-p6.png" alt="pixel art poster of the album cover"></button>
+          </div>
+        </div>
+
+        <!-- link to javascript -->
+    <script src="script.js"></script>
+    </body>
+</html>
+
