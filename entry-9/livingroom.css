@@ -1,26 +1,29 @@
 .right {
-  margin-left: 4.3em;
+  margin-left: 8em;
 }
 .left {
-  margin-left: -4.2em;
+  margin-left: -8em;
 }
 .left,.right {
-  color: rgb(255, 255, 255);
+  border: 5px solid black;
+  color: rgb(0, 0, 0);
   font-family: 'DotGothic16', sans-serif;
   position: fixed;
-  z-index: 2; 
-  font-size: 20vw; /* Responsive font size */
-  padding: 2vw; /* Adjust the padding for smaller screens */
-  background: none;
-  border: none;
-  padding: 0;
+  z-index: 3; 
+  font-size: 10vw; /* Responsive font size */
+  background: white;
   outline: inherit;
   position: fixed;
-
+  /* padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px; */
+  
+  opacity: 80%;
 }
+
 .left:hover,.right:hover {
   color:rgb(0, 242, 161);
-  opacity: 80%;
+  border: solid 5px rgb(0, 242, 161);
   cursor: pointer;
 }
 
@@ -70,15 +73,14 @@ body.dark-mode::before {
   transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   max-width: 80%;
   text-align: center;
   font-family: 'DotGothic16';
 }
 
-.popup-content img {
-  max-width: 100%;
+.popup-content img{
+  width: 180px;
   height: auto;
 }
 /* Style close buttons for each popup */
@@ -114,8 +116,8 @@ body.dark-mode::before {
 }
 
 
-.popup-content img {
-  max-width: 200px;
+.popup-content .popup-image {
+  width: 240px;
 }
 
 
@@ -134,25 +136,29 @@ body {
   height: 100vh; 
   margin: 0; 
 }
+/* Create a new wrapper grid to cover the entire screen */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr; /* Three columns */
+  width: 100%;
+  height: 100vh;
+}
 
 .container {
-  position: absolute;
+  grid-row:2;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr); 
-  width: 800px;
-  height: 500px;
-  row-gap: 30px;
-  column-gap: 30px;
-  top:2em;
-  left: 18em;
   z-index: 2;
+  padding: 200px;
+  margin-top: -10em;
 }
 
 
 .p1 {
-  grid-column-start: 8;
-  grid-column-end: 11;
+  grid-column-start: 7;
+  grid-column-end: 10;
   grid-row-start: 2;
   grid-row-end: 8;
 }
@@ -187,12 +193,19 @@ body {
     font-size: 4vw;
     padding: 15px;
   }
+  .container {
+    transform:scale(0.6);
+    
+  }
 }
 
 @media screen and (max-width: 480px) {
 
   .left, .right {
-    font-size: 3vw;
-    padding: 10px;
+    font-size: 4vw;
+    padding: 15px;
+  }
+  .container {
+    transform:scale(0.3);
   }
 }
