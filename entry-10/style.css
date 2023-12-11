@@ -1,9 +1,10 @@
 h1 {
-    font-size: 250px;
+    font-size: 140px;
     margin-top: 40px;
-
 }
-
+.questionmark {
+    font-family:'DotGothic16', sans-serif;
+}
 h2 {
     font-size: 80px;
     margin-top: 3.5em;
