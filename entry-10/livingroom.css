@@ -1,3 +1,4 @@
+
 /* goback */
 #buttonImage {
   position:absolute;
@@ -5,11 +6,13 @@
   right:1.2em;
   width: 50px;
   height: 50px; 
+  z-index: 3;
 }
 
 a:hover img {
   content: url('goback2.png'); 
 }
+
 
 /* navigation */
 .right {
@@ -96,7 +99,12 @@ body.dark-mode::before {
   font-family: 'DotGothic16';
   text-align: center; /* Center-align content inside popup-content */
 }
-
+a {
+  color:black;
+}
+a:hover{
+  color:rgb(37, 138, 105);
+}
 .popup-content .popup-image {
   width: 240px;
   display: block;

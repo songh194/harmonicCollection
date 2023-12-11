@@ -1,3 +1,9 @@
+a {
+  color:black;
+}
+a:hover{
+  color:rgb(37, 138, 105);
+}
 /* goback */
 #buttonImage {
   position:absolute;
@@ -5,6 +11,7 @@
   right:1.2em;
   width: 50px;
   height: 50px; 
+  z-index: 3;
 }
 
 a:hover img {
@@ -143,7 +150,7 @@ a:hover img {
     .p7 { grid-area: 7 / 7 / 9 / 9; }
     .p8 { grid-area: 5 / 9 / 8 / 11; }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
 
       .left, .right {
         font-size: 4vw;
@@ -159,8 +166,8 @@ a:hover img {
     
       .container {
         padding-left: 18vw;
-        transform:scale(0.5);
-        column-gap: 15vw;
+        transform:scale(0.6);
+        column-gap: 10vw;
         position:absolute;
       }
     }
@@ -177,7 +184,7 @@ a:hover img {
         margin-top: 60vw;
       }
       .container {
-        transform:scale(0.1);
+        transform:scale(0.3);
       }
     }
 
