@@ -34,7 +34,7 @@ function openPopup7() {
 }
 
 function openPopup8() {
-    var popup = document.getElementById("myPopup7");
+    var popup = document.getElementById("myPopup8");
     popup.style.display = "block";
 }
 function openPopup9() {

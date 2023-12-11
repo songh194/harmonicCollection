@@ -1,31 +1,31 @@
 /* navigation */
 .right {
-    margin-left: 4.3em;
-  }
-  .left {
-    margin-left: -4.2em;
-  }
-  .left,.right {
-    color: rgb(255, 255, 255);
-    font-family: 'DotGothic16', sans-serif;
-    position: fixed;
-    font-size: 20vw; /* Responsive font size */
-    padding: 2vw; /* Adjust the padding for smaller screens */
-    z-index: 2;
-    font-size: 300px;
-    background: none;
-    border: none;
-    padding: 0;
-    outline: inherit;
-    position: fixed;
-    
-  
-  }
-  .left:hover,.right:hover {
-    color:rgb(0, 242, 161);
-    opacity: 80%;
-    cursor: pointer;
-  }
+  right:1em;
+}
+.left {
+  left: 1em;
+}
+.left,.right {
+  border: 5px solid black;
+  color: rgb(0, 0, 0);
+  font-family: 'DotGothic16', sans-serif;
+  position: fixed;
+  z-index: 3; 
+  font-size: 5vw; /* Responsive font size */
+  background: white;
+  outline: inherit;
+  position: fixed;
+  padding-left: 2vw;
+  padding-bottom: 1.8vw;
+  padding-right: 2vw; 
+  opacity: 80%;
+}
+
+.left:hover,.right:hover {
+  color:rgb(0, 242, 161);
+  border: solid 5px rgb(0, 242, 161);
+  cursor: pointer;
+}
   
   
   /* popup with java */
@@ -48,14 +48,18 @@
       transform: translate(-50%, -50%);
       background-color: #fff;
       padding: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      padding-left: 30px;
+      padding-top: 30px;
+      padding-right: 30px;
       max-width: 80%;
       text-align: center;
       font-family: 'DotGothic16';
+      
     }
     
     /* Style close buttons for each popup */
     .close {
+      font-size: 2vw;
       position: absolute;
       top: 0;
       right: 0;
@@ -81,19 +85,22 @@
     }
    .p9-img {
         width: 300px;
-        position:relative;
-        top:20em;
+        position:fixed;
+        bottom: 0;
         left: 5em;
    }
 .molcarGif {
     margin:0;
 }
-.popup-content img {
 
-    max-width: 200px;
+  .popup-content .p1-img, .popup-content .p2-img {
+    width: 400px;
   }
-  
-  
+  .popup-content .p3-img,.popup-content .p4-img,.popup-content .p6-img,.popup-content .p8-img{
+    width:240px;
+  }
+
+
   /* grid */
   body {
     display: flex;
@@ -105,6 +112,7 @@
   
 
 .container {
+  z-index: 2;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -125,17 +133,38 @@
 
     @media screen and (max-width: 768px) {
 
-        .left, .right {
-          font-size: 4vw;
-          padding: 15px;
-        }
+      .left, .right {
+        font-size: 4vw;
+        border: 3px solid black;
+    
       }
-      
-      @media screen and (max-width: 480px) {
-      
-        .left, .right {
-          font-size: 3vw;
-          padding: 10px;
-        }
+      .p9 {
+        transform:scale(0.4);
+        left:0;
+        margin-top: 60vw;
+        position: absolute;
       }
-      
+    
+      .container {
+        padding-left: 18vw;
+        transform:scale(0.5);
+        column-gap: 15vw;
+        position:absolute;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+    
+      .left, .right {
+        border: 3px solid black;
+        font-size: 2vw;
+      }
+      .p9 {
+        transform:scale(0.2);
+        left:0;
+        margin-top: 60vw;
+      }
+      .container {
+        transform:scale(0.1);
+      }
+    }

@@ -52,31 +52,19 @@ document.getElementById("closePopup4").addEventListener("click", function() {
     var popup = document.getElementById("myPopup4");
     popup.style.display = "none";
 });
-document.getElementById("closePopup5").addEventListener("click", function() {
-    var popup = document.getElementById("myPopup5");
-    popup.style.display = "none";
+
+
+//light
+const toggleButton = document.getElementById('toggleButton');
+let isDarkMode = false;
+
+toggleButton.addEventListener('click', function() {
+  isDarkMode = !isDarkMode; // Toggle the boolean value
+
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode'); // Add the dark-mode class
+  } else {
+    document.body.classList.remove('dark-mode'); // Remove the dark-mode class
+  }
 });
-document.getElementById("closePopup6").addEventListener("click", function() {
-    var popup = document.getElementById("myPopup6");
-    popup.style.display = "none";
-});
 
-
-
-//speaker//
-document.addEventListener("DOMContentLoaded", function() {
-    var music = document.getElementById("music");
-    var playButton = document.getElementById("playButton");
-  
-    playButton.addEventListener("click", function() {
-      if (music.paused) {
-        music.play();
-        playButton.src = "speakerplaying.png";
-      } else {
-        music.pause();
-        playButton.src = "speaker.png";
-      }
-    });
-  });
-  
-  
