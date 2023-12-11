@@ -1,3 +1,17 @@
+/* goback */
+#buttonImage {
+  position:absolute;
+  top: 1.2em;
+  right:1.2em;
+  width: 50px;
+  height: 50px; 
+}
+
+a:hover img {
+  content: url('goback2.png'); 
+}
+
+/* navigation */
 .right {
   right:1em;
 }
@@ -91,10 +105,12 @@ body.dark-mode::before {
 
 .popup-content h2 {
   font-size: 30px;
-  text-align: left; /* Align h2 text to the left */
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px; 
 }
-
+.popup-content p {
+  font-size: 18px;
+  margin-top: 20px; 
+}
 
 .close {
   font-size: 2vw;

@@ -2,9 +2,7 @@ h1 {
     font-size: 140px;
     margin-top: 40px;
 }
-.questionmark {
-    font-family:'DotGothic16', sans-serif;
-}
+
 h2 {
     font-size: 80px;
     margin-top: 3.5em;
@@ -34,6 +32,20 @@ h1,h2,h3 {
     width: 100%;
 }
 
+.credits{
+    font-family:'DotGothic16', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    a {
+        font-size: 16px;
+        color:black;
+    }
+    a:hover{
+        cursor: pointer;
+        color:rgb(37, 138, 105);
+    }
+}
 
 
 @media  screen and (max-width:480px){
