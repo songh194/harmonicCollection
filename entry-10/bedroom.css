@@ -71,15 +71,13 @@ a:hover img {
       padding-top: 30px;
       padding-right: 30px;
       max-width: 80%;
+      width: 400px;
+      height: auto;
       text-align: center;
       font-family: 'DotGothic16';
       
     }
-    .popup-content img{
-      width: 240px;
-      /* display: block; */
-      height: auto;
-    }
+
     
     /* Style close buttons for each popup */
     .close {
@@ -117,12 +115,9 @@ a:hover img {
     margin:0;
 }
 
-  .popup-content .p1-img, .popup-content .p2-img {
-    width: 400px;
-  }
-  .popup-content .p3-img,.popup-content .p4-img,.popup-content .p6-img,.popup-content .p8-img{
-    width:240px;
-  }
+
+
+
 
   /* grid */
   body {
@@ -153,6 +148,16 @@ a:hover img {
     .p6 { grid-area: 3 / 6 / 7 / 9; }
     .p7 { grid-area: 7 / 7 / 9 / 9; }
     .p8 { grid-area: 5 / 9 / 8 / 11; }
+
+
+
+    .popup-content .p1-img, .popup-content .p2-img {
+      width: 400px;
+    }
+    .popup-content .popup-image{
+      width:240px;
+    }
+
 
     @media screen and (max-width: 900px) {
 
