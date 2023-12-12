@@ -75,6 +75,11 @@ a:hover img {
       font-family: 'DotGothic16';
       
     }
+    .popup-content img{
+      width: 240px;
+      /* display: block; */
+      height: auto;
+    }
     
     /* Style close buttons for each popup */
     .close {
@@ -118,7 +123,6 @@ a:hover img {
   .popup-content .p3-img,.popup-content .p4-img,.popup-content .p6-img,.popup-content .p8-img{
     width:240px;
   }
-
 
   /* grid */
   body {
@@ -164,12 +168,13 @@ a:hover img {
         position: absolute;
       }
     
-      .container {
+      .p1 img,.p2 img,.p3 img.p5 img,.p6 img,.p7 img,.p8 img,.p9 img {
         padding-left: 18vw;
         transform:scale(0.6);
         column-gap: 10vw;
         position:absolute;
       }
+      
     }
     
     @media screen and (max-width: 480px) {
@@ -183,7 +188,7 @@ a:hover img {
         left:0;
         margin-top: 60vw;
       }
-      .container {
+      .p1 img,.p2 img,.p3 img.p5 img,.p6 img,.p7 img,.p8 img,.p9 img {
         transform:scale(0.3);
       }
     }

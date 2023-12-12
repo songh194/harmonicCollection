@@ -76,8 +76,6 @@ body.dark-mode::before {
   position: fixed;
   top: 0;
   left: 0;
-  right:0;
-  bottom:0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -97,7 +95,7 @@ body.dark-mode::before {
   width: 30vw;
   max-width: 80%;
   font-family: 'DotGothic16';
-  text-align: center; /* Center-align content inside popup-content */
+  text-align: center; 
 }
 a {
   color:black;
@@ -196,7 +194,7 @@ body {
     left:-4em;
   }
   .container {
-    transform:scale(0.7);
+    transform:scale(0.8);
     margin-left: 0;
   }
   .popup {
@@ -226,11 +224,12 @@ body {
   }
 
   .container {
-    transform:scale(0.5);
+    transform:scale(0.6);
 
     margin-left: 0;
 
   }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -244,7 +243,7 @@ body {
     left:0;
   }
   .container {
-    transform:scale(0.1);
+    transform:scale(0.4);
     margin-left: 0;
   }
 }
