@@ -38,26 +38,39 @@ h1 {
     text-align: center;
     bottom: 0;
     width: 100%;
-    color:darkgreen;
+    color:seagreen;
 }
 
 .insta {
-    color:black;
+    color:seagreen;
 }
 .insta:hover{
     color:rgb(37, 138, 105);
 }
 
 
-@media  screen and (max-width:480px){
+@media  screen and (max-width:900px){
+    h1 {
+        font-size: 140px;
+    }
+    .explore{
+        font-size: 60px;
+    }
+}
+@media  screen and (max-width:700px){
     h1 {
         font-size: 120px;
     }
-    h2 {
+    .explore{
         font-size: 50px;
-        margin-left: .2em;
     }
-    h3 {
-        font-size: 60px;
+}
+
+@media  screen and (max-width:480px){
+    h1 {
+        font-size: 80px;
+    }
+    .explore{
+        font-size: 40px;
     }
 }
