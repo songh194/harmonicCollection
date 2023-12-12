@@ -1,3 +1,4 @@
+/* title */
 h1 {
     font-weight: 100;
     text-align: center;
@@ -8,7 +9,7 @@ h1 {
     line-height: 80%;
 }
 
-
+/* start button */
 .explore{
     font-size: 80px;
     text-decoration-line: none;
@@ -21,7 +22,7 @@ h1 {
 }
 
 
-
+/* footer */
 .credits{
     font-family:'DotGothic16', sans-serif;
     font-weight: 100;

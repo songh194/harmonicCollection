@@ -87,7 +87,7 @@ a:hover img {
       right: 0;
       padding: 10px;
       cursor: pointer;
-      z-index: 12; /* Increased z-index for close buttons */
+      z-index: 12; 
     }
     
   
@@ -113,10 +113,8 @@ a:hover img {
    }
 .molcarGif {
     margin:0;
+    width: 400px;
 }
-
-
-
 
 
   /* grid */
