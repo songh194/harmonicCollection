@@ -168,13 +168,12 @@ a:hover img {
         position: absolute;
       }
     
-      .p1 img,.p2 img,.p3 img.p5 img,.p6 img,.p7 img,.p8 img,.p9 img {
+      .container {
         padding-left: 18vw;
         transform:scale(0.6);
         column-gap: 10vw;
         position:absolute;
       }
-      
     }
     
     @media screen and (max-width: 480px) {
@@ -188,7 +187,7 @@ a:hover img {
         left:0;
         margin-top: 60vw;
       }
-      .p1 img,.p2 img,.p3 img.p5 img,.p6 img,.p7 img,.p8 img,.p9 img {
+      .container {
         transform:scale(0.3);
       }
     }

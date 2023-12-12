@@ -1,50 +1,51 @@
 h1 {
-    font-size: 140px;
-    margin-top: 40px;
-}
-
-h2 {
-    font-size: 80px;
-    margin-top: 3.5em;
-    margin-bottom: -5em;
-    margin-left: -5em;
-}
-
-h3 {
-    font-size: 90px;
-    margin-top: -1em;
-    
-}
-
-h3:hover {
-    color:rgb(37, 138, 105);
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    cursor: pointer;
-}
-h1,h2,h3 {
-    text-align: center;
     font-weight: 100;
-    color:rgb(4, 4, 48);
+    text-align: center;
+    font-family: 'myFirstFont';
+    font-size: 240px;
+    padding-top: 40px;
+    color:rgb(243, 114, 23);
+    line-height: 80%;
 }
 
-.background-image {
-    width: 100%;
+
+.explore{
+    font-size: 80px;
+    text-decoration-line: none;
+    color:rgb(243, 114, 23);
 }
+
+.explore::before {
+    content: ''; 
+    position: absolute;
+ 
+    transition: opacity 0.3s ease; 
+}
+
+.explore:hover::before {
+    text-decoration-line: underline;
+    color:seagreen;
+    text-align: center;
+    content: 'Explore \u9756';
+}
+
+
 
 .credits{
     font-family:'DotGothic16', sans-serif;
     font-weight: 100;
     font-size: 20px;
     text-align: center;
-    a {
-        font-size: 16px;
-        color:black;
-    }
-    a:hover{
-        cursor: pointer;
-        color:rgb(37, 138, 105);
-    }
+    bottom: 0;
+    width: 100%;
+    color:darkgreen;
+}
+
+.insta {
+    color:black;
+}
+.insta:hover{
+    color:rgb(37, 138, 105);
 }
 
 
