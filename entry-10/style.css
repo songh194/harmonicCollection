@@ -16,17 +16,8 @@ h1 {
 }
 
 .explore::before {
-    content: ''; 
-    position: absolute;
- 
-    transition: opacity 0.3s ease; 
-}
-
-.explore:hover::before {
-    text-decoration-line: underline;
     color:seagreen;
-    text-align: center;
-    content: 'Explore \u9756';
+    text-decoration-line: underline;
 }
 
 
@@ -36,7 +27,8 @@ h1 {
     font-weight: 100;
     font-size: 20px;
     text-align: center;
-    bottom: 0;
+    position: absolute;
+    bottom: -8em;
     width: 100%;
     color:seagreen;
 }
@@ -64,6 +56,9 @@ h1 {
     .explore{
         font-size: 50px;
     }
+    .credits {
+        bottom: 0;
+    }
 }
 
 @media  screen and (max-width:480px){
@@ -72,5 +67,8 @@ h1 {
     }
     .explore{
         font-size: 40px;
+    }
+    .credits {
+        bottom: 0;
     }
 }
