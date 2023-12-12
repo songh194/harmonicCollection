@@ -194,6 +194,7 @@ a:hover img {
       }
       .container {
         transform:scale(0.3);
+        column-gap: 12vw;
       }
     }
 

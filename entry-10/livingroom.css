@@ -172,7 +172,8 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr);
-
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   z-index: 2;
   margin-top: -10em;
 
@@ -219,8 +220,11 @@ body {
   }
   .container {
     transform:scale(0.6);
-
- 
+    column-gap: 12vw;
+  }
+  .popup-content{
+    width: 100%;
+    
   }
 
 }
@@ -237,6 +241,7 @@ body {
   }
   .container {
     transform:scale(0.4);
+    column-gap: 12vw;
   }
 }
 
