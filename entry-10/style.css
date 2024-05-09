@@ -2,12 +2,19 @@
 h1 {
     font-weight: 100;
     text-align: center;
-    font-family: 'myFirstFont';
+    font-family: "VT323", monospace;
     font-size: 240px;
-    padding-top: 40px;
+    padding-top: 9rem;
     color:rgb(243, 114, 23);
     line-height: 80%;
+    animation: fadeIn 5s; 
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 
 /* start button */
 .explore{

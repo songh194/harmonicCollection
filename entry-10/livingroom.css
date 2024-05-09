@@ -244,6 +244,7 @@ body {
   .container {
     transform:scale(0.4);
     column-gap: 12vw;
+
   }
 }
 
